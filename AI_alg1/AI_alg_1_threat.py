@@ -2,12 +2,11 @@ import subprocess
 from Variables import ai_git_downloaded
 from Variables import dev_mode
 #running commands in the terminal for streamlining start up
-if ai git downloaded == False and dev_mode == True :
+if ai_git_downloaded == False and dev_mode == True :
     commands = 
     [
         "cd AI_alg_1",
         "sudo apt-get update",
-        "pi",
         "sudo apt-install git",
         "sudo git clone https://github.com/dusty-nv/jetson-inference.git"
         "cd  jetson-inference",
@@ -24,5 +23,4 @@ if ai git downloaded == False and dev_mode == True :
 
     command = ";".join(commands)
     result = subprocess.run(command, shell=True, text=True, capture_output=True)
-elif ai_git_downloaded
 print(result.stdout)
